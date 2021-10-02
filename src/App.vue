@@ -1,17 +1,18 @@
 <template>
 
-<nav class="bg-green-400">
-  <ul class="h-16 flex text-white text-xl justify-end px-14 items-center">
-    <router-link class="mx-2" to="/">Home</router-link>
-    <router-link class="mx-2" to="/perfil">Perfil</router-link>
-    <router-link class="mx-2" to="/login">Login</router-link>
-  </ul>
-</nav>
+<app-nav-bar></app-nav-bar>
 
 <!-- SPA -->
 <router-view></router-view>
+
+<app-footer></app-footer>
  
 </template>
+
+<script setup>
+import AppNavBar from './components/AppNavBar.vue'
+import AppFooter from './components/AppFooter.vue'
+</script>
 
 <script>
 export default {

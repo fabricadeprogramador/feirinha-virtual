@@ -8,9 +8,9 @@ import './index.css'
 
 const router = createRouter({
     routes: [
-        { path: "/", component: Home },
-        { path: "/perfil", component: Profile },
-        { path: "/login", component: Login }
+        { path: "/home", component: Home, name: "Início" },
+        { path: "/perfil", component: Profile, name: "Perfil" },
+        { path: "/", component: Login, name: "Login" }
     ],
     history: createWebHistory()
 })

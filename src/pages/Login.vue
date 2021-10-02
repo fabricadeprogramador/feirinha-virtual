@@ -113,11 +113,12 @@ export default {
           "http://localhost:3000/login",
           this.user
         );
-        alert("Usuário logado com sucesso");
+        // Redirecionar para a página home
+        this.$router.push("/home")
       } catch (error) {
         // Exibir o alerta
-        this.$refs.alert.open();
         this.loginError = error.response.data.message;
+        this.$refs.alert.open();
       }
     },
   },

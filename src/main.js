@@ -10,7 +10,7 @@ const router = createRouter({
     routes: [
         { path: "/home", component: Home, name: "Início" },
         { path: "/perfil", component: Profile, name: "Perfil" },
-        { path: "/", component: Login, name: "Login" }
+        { path: "/", component: Login, name: "Login", meta: { hideNavBar: true } }
     ],
     history: createWebHistory()
 })

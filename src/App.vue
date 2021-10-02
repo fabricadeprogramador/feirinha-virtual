@@ -1,6 +1,6 @@
 <template>
 
-<app-nav-bar></app-nav-bar>
+<app-nav-bar v-show="!$route.meta.hideNavBar"></app-nav-bar>
 
 <!-- SPA -->
 <router-view></router-view>

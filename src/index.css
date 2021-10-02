@@ -2,5 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+ion-icon {
+    color: rgba(52, 211, 153, var(--tw-bg-opacity));
 }
+  

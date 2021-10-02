@@ -20,58 +20,32 @@
       "
     >
       <h1 class="text-5xl text-white m-auto">Feirinha Virtual</h1>
+
       <div class="border-red p-8 m-auto outline-none">
         <div class="flex justify-center">
-          <div class="flex flex-col">
-            <div class="flex flex-row">
-              <div
-                class="
-                  flex
-                  items-center
-                  p-2
-                  border-2 border-gray-500
-                  bg-gray-300
-                  rounded-tr-md
-                "
-              >
-                <ion-icon name="at-outline"></ion-icon>
+          <div class="flex flex-col gap-3">
+
+            <!-- INPUT EMAIL -->
+            <div class="flex flex-row border-2 rounded">
+              <div class="flex items-center p-2 bg-white">
+                <ion-icon name="mail"></ion-icon>
               </div>
 
               <input
-                class="
-                  p-2
-                  rounded-tl-md rounded-br-md
-                  outline-none
-                  border-2 border-gray-500
-                  bg-gray-300
-                "
+                class="p-2 outline-none bg-white w-full"
                 type="email"
                 placeholder="Email"
                 v-model="user.email"
               />
             </div>
 
-            <div class="flex flex-row">
-              <div
-                class="
-                  flex
-                  items-center
-                  p-2
-                  border-2 border-gray-500
-                  bg-gray-300
-                  rounded-tr-md
-                "
-              >
-                <ion-icon name="lock-closed-outline"></ion-icon>
+            <!-- INPUT SENHA -->
+            <div class="flex flex-row border-2 rounded">
+              <div class="flex items-center p-2 bg-white">
+                <ion-icon name="lock-closed"></ion-icon>
               </div>
               <input
-                class="
-                  p-2
-                  rounded-tl-md rounded-br-md
-                  outline-none
-                  border-2 border-gray-500
-                  bg-gray-300
-                "
+                class="p-2 outline-none bg-white w-full"
                 type="password"
                 placeholder="Senha"
                 v-model="user.password"
@@ -82,8 +56,8 @@
       </div>
       <div class="w-full flex flex-row justify-center gap-2">
         <app-button @click="login" class="bg-white text-green-400">
-          Entrar</app-button
-        >
+          Entrar
+        </app-button>
         <app-button class="bg-white text-green-400"> Registrar-se</app-button>
       </div>
     </div>
@@ -114,7 +88,7 @@ export default {
           this.user
         );
         // Redirecionar para a página home
-        this.$router.push("/home")
+        this.$router.push("/home");
       } catch (error) {
         // Exibir o alerta
         this.loginError = error.response.data.message;

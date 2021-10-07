@@ -5,16 +5,25 @@
       <router-link
         class="mx-2"
         to="/home"
-        :class="[{ 'bg-green-700': $route.name == 'Início' }, 'px-2 py-1 rounded-sm']"
-        >Home</router-link
+        :class="[
+          { 'bg-green-700': $route.name == 'Início' },
+          'px-2 py-1 rounded-sm',
+        ]"
       >
+        <ion-icon id="ion-white" name="home-outline" ></ion-icon>
+        Home</router-link
+      >
+
       <router-link
         class="mx-2"
         to="/perfil"
-        :class="[{ 'bg-green-700': $route.name == 'Perfil' }, 'px-2 py-1 rounded-sm']"
-        >Perfil</router-link
+        :class="[
+          { 'bg-green-700': $route.name == 'Perfil' },
+          'px-2 py-1 rounded-sm',
+        ]"
+        ><ion-icon id="ion-white" name="person-outline" ></ion-icon>Perfil</router-link
       >
-      <router-link class="mx-2" to="/">Login</router-link>
+      <router-link class="mx-2" to="/"><ion-icon id="ion-white" name="log-in-outline" size="small" ></ion-icon> Login</router-link>
     </ul>
   </nav>
 </template>

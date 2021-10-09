@@ -58,7 +58,7 @@
         <app-button @click="login" class="bg-white text-green-400">
           Entrar
         </app-button>
-        <app-button class="bg-white text-green-400"> Registrar-se</app-button>
+        <app-button class="text-white border-2 border-white"> Registrar-se</app-button>
       </div>
     </div>
   </div>
